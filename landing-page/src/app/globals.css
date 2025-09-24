@@ -4,6 +4,7 @@
   --background: #F5f7fa;
   --akzentcolor: #4caf4f;
   --h-color: #4d4d4d;
+  --link-header-color: #18191F;
   --text-color: #717171;
 }
 
@@ -11,6 +12,7 @@
    --background: #333;
   --akzentcolor: #4caf4f;
   --h-color: #f5f7fa;
+  --link-header-color: #eeeeee;
   --text-color: #ffffff;
 }
 
