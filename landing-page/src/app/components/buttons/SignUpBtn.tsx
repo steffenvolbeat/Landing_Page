@@ -13,7 +13,7 @@ const SignUpBtn: React.FC = () => {
       style={{
         backgroundColor: "var(--akzentcolor)",
       }}
-      className="pt-2.5 pb-2.5 pl-5 pr-5 rounded-[6px] text-white text-lg"
+      className="pt-2 pb-2 pl-5 pr-5 rounded-[6px] text-white text-lg"
     >
       Sign up
     </button>
