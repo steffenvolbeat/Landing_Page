@@ -4,8 +4,8 @@ import { navList } from "./navData";
 const NavDesctop = () => {
   return (
     <nav
-      style={{ background: "#F5f7fa", color: "var(--link-header-color)" }}
-      className="  flex text-[16px] gap-3    justify-between md:w-[380px] lg:w-[450px] xl:w-[600px]"
+      style={{ color: "var(--link-header-color)" }}
+      className="  flex  lg:text-[16px] text-[14px]     justify-between md:w-[340px] lg:w-[450px] xl:w-[600px]"
     >
       {navList.map((item) => {
         return (

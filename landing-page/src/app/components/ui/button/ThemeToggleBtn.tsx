@@ -40,7 +40,7 @@ export default function ThemeToggleBtn() {
   return (
     <button
       onClick={toggleTheme}
-      className="w-10 h-10 rounded-full bg-grau-200 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out border-2 border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md hover:shadow-lg"
+      className="w-10 h-10 rounded-full bg-grau-200 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out border-2 border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-300 shadow-md hover:shadow-lg"
       aria-label={`Zu ${theme === "dark" ? "Light" : "Dark"} Mode wechseln`}
     >
       {/* Sun Icon (Light Mode)*/}
