@@ -13,7 +13,7 @@ export default function Header() {
   };
   return (
     <div
-      className="h-[84px] fixed  top-0  w-full  flex justify-between items-center px-4 transition-colors duration-300"
+      className="h-[84px] fixed  top-0  z-10 w-full  flex justify-between items-center px-4 transition-colors duration-300"
       style={{ background:"var(--main-background)",  color: "var(--link-header-color)" }}>
       {/* Mobile Navigation */}
       <div className="md:hidden group relative">
