@@ -7,12 +7,14 @@ export default function Home() {
     <div>
       <Header />
       <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-5 bg-background text-text-color">
-        <div className="fixed top-5 right-100 z-50">
+        {/* <div className="fixed top-5 right-100 z-50">
           <ThemeToggleBtn />
-        </div>
+        </div> */}
+
+        
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start ">
           <Image
-            className="dark:invert"
+           /*  className="dark:invert" */
             src={"/next.svg"}
             alt="Next.js Logo"
             width={300}

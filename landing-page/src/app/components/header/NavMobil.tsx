@@ -4,8 +4,8 @@ import { navList } from "./navData";
 const NavMobil = () => {
   return (
     <nav
-      style={{ background: "#F5f7fa", color: "var(--link-header-color)" }}
-      className="  flex flex-col py-5 text-2xl gap-1"
+      style={{ background:"var(--card-background)", color: "var(--link-header-color)" }}
+      className="  flex flex-col py-5 text-2xl gap-1 opacity-95"
     >
       {navList.map((item) => {
         return (

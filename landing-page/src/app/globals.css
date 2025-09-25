@@ -19,8 +19,8 @@
   --h-color: #f5f7fa; /*Überschriften*/
   --h1-color: #f5f7fa; /*Überschriften*/
   --text-color: #e5e5e5; /*Helle Überschriften */
-  --header-text-color: #8f8d8d; /* Nexcent wird weiß (Nexcent)*/
-  --link-header-color: #2c2a2a; /* Link Farbe im Header wird weiß */
+  --header-text-color: #fcfbfb; /* Nexcent wird weiß (Nexcent)*/
+  --link-header-color: #ececec; /* Link Farbe im Header wird weiß */
   --foreground: #ffffff;
   --card-background: #2d2d2d;
   --border-color: #374151;
