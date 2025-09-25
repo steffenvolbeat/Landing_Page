@@ -1,9 +1,8 @@
-
+"use client";
 
 import { useState } from "react";
 import { Burger } from "../Icons/Icons";
 import NavMobil from "./NavMobil";
-
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
