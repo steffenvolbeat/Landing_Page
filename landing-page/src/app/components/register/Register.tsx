@@ -1,10 +1,14 @@
 "use client";
 
 import React from "react";
-import RegisterBtn from "../buttons/RegisterBtn";
 import RegisterImage from "./RegisterImage";
+import { Btn } from "../btn/Btn";
 
 const Register: React.FC = () => {
+  const handleClick = () => {
+    console.log("Button wurde geklickt!");
+  };
+
   return (
     <section
       className="w-full flex  min-h-fit justify-around items-center  bg-[#F5f7fa]  sm:flex-col sm:pb-10 sm:pt-10 md:flex-row md:pl-10 md:pr-10 lg:flex-row"
@@ -15,7 +19,7 @@ const Register: React.FC = () => {
         <p className="text-xs">
           Where to grow your business as a photographer: site or social media?
         </p>
-        <RegisterBtn />
+        <Btn handleClick={handleClick} title={"Register"} />
       </div>
       <div>
         <RegisterImage />
