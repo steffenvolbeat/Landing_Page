@@ -1,4 +1,6 @@
 import Header from "./components/header/Header";
+import RegisterSwiper from "./components/register/RegisterSwiper";
+
 import ThemeToggleBtn from "./components/ui/button/ThemeToggleBtn";
 import Image from "next/image";
 
@@ -6,11 +8,12 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <RegisterSwiper/>
       <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-5 bg-background text-text-color">
         {/* <div className="fixed top-5 right-100 z-50">
           <ThemeToggleBtn />
         </div> */}
-
+      
         
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start ">
           <Image
