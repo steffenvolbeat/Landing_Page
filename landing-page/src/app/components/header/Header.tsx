@@ -1,11 +1,15 @@
+"use client";
 import Link from "next/link";
-import { Burger } from "../Icons/Burger";
-import Nav from "./NavDesctop";
-import SignUpBtn from "../buttons/SignUpBtn";
+import Image from "next/image";
 import NavDesctop from "./NavDesctop";
 import NavMobil from "./NavMobil";
+import { Btn } from "../btn/Btn";
+import { Burger } from "../Icons/Icons";
 
-const Header = () => {
+export default function Header() {
+  const handleClick = () => {
+    console.log("Button wurde geklickt!");
+  };
   return (
     <div className=" bg-[#f5f7fa] h-[84px] w-full flex justify-between items-center">
       <div className="md:hidden group relative">
@@ -16,11 +20,18 @@ const Header = () => {
       </div>
 
       <div className=" flex items-center gap-2">
-        <img className="hidden sm:block" src="/Icon.png" alt="" />
+        <Image
+          className="hidden sm:block"
+          src="/Icon.png"
+          alt="Nexcent logo"
+          width={32}
+          height={32}
+          priority
+        />
+
         <span className="text-[28px] font-bold ">Nexcent</span>
       </div>
       <div className="hidden md:block">
-        
         <NavDesctop />
       </div>
 
@@ -28,15 +39,12 @@ const Header = () => {
         <Link
           href={"#"}
           className="text-[16px]"
-          style={{ color: "var(--akzentcolor)" }}
-        >
+          style={{ color: "var(--akzentcolor)" }}>
           {" "}
           Login
         </Link>
-        <SignUpBtn />
+        <Btn handleClick={handleClick} title={"Sign up"} />
       </div>
     </div>
   );
-};
-
-export default Header;
+}
