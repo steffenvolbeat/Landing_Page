@@ -28,8 +28,8 @@ export const ArrowRight: React.FC<React.SVGProps<SVGSVGElement>> = ({
 export const Burger: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
-      width="24"
-      height="24"
+      width="40"
+      height="40"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -37,19 +37,19 @@ export const Burger: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
     >
       <path
         d="M20 6L4 6"
-        stroke="#717171"
+        stroke="var(--h-color)"
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M20 12L4 12"
-        stroke="#717171"
+        stroke="var(--h-color)"
         strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
         d="M20 18H4"
-        stroke="#717171"
+        stroke="var(--h-color)"
         strokeWidth="1.5"
         strokeLinecap="round"
       />

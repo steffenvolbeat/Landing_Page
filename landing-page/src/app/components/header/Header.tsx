@@ -6,6 +6,7 @@ import NavMobil from "./NavMobil";
 import { Btn } from "../btn/Btn";
 import { Burger } from "../Icons/Icons";
 import ThemeToggleBtn from "../ui/button/ThemeToggleBtn";
+import MobileMenu from "./MobileMenue";
 
 export default function Header() {
   const handleClick = () => {
@@ -15,13 +16,7 @@ export default function Header() {
     <div
       className="h-[84px] fixed  top-0  z-10 w-full  flex justify-between items-center px-4 transition-colors duration-300"
       style={{ background:"var(--main-background)",  color: "var(--link-header-color)" }}>
-      {/* Mobile Navigation */}
-      <div className="md:hidden group relative">
-        <Burger className="h-10 w-10  cursor-pointer" />
-        <div className="absolute scale-0 translate-x-[-300px] group-hover:translate-x-0  group-hover:scale-100 transition-all duration-800">
-          <NavMobil />
-        </div>
-      </div>
+     <MobileMenu/>
       {/* Logo & Nav */}
       <div className="  items-center gap-2 hidden sm:flex">
         <Image
