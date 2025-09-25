@@ -30,7 +30,8 @@ export default function RootLayout({
       {/* suppressHydrationWarning für Theme  */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+        {/*ThemeProvider umschließt alle Children */}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

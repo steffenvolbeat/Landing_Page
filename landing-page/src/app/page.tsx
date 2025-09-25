@@ -1,5 +1,6 @@
 import Header from "./components/header/Header";
 import ThemeToggleBtn from "./components/ui/button/ThemeToggleBtn";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -29,26 +30,38 @@ export default function Home() {
               <div className=" flex mask-b-to-indigo-100 mb-2 bg-gray-950 flex-col border-2 rounded w-10">
                 <div className="flex flex-col mb-2 border-2">1</div>
               </div>
-              <div className="flex flex-col border-2  p-1 mb-2 rounded w-20">2</div>
-              <div className="flex flex-col border-2 border-gray-800 bg-emerald-300 mb-2 rounded w-30">3</div>
-              <div className="flex flex-col border-2 mb-2 border-e-gray-600 rounded w-40">4</div>
-              <div className="flex flex-col border-2 mb-2 border-b-stone-950 rounded w-50">5</div>
-              <div className="flex flex-col border-2 mb-2 border-r-neutral-800 rounded w-60">6</div>
+              <div className="flex flex-col border-2  p-1 mb-2 rounded w-20">
+                2
+              </div>
+              <div className="flex flex-col border-2 border-gray-800 bg-emerald-300 mb-2 rounded w-30">
+                3
+              </div>
+              <div className="flex flex-col border-2 mb-2 border-e-gray-600 rounded w-40">
+                4
+              </div>
+              <div className="flex flex-col border-2 mb-2 border-b-stone-950 rounded w-50">
+                5
+              </div>
+              <div className="flex flex-col border-2 mb-2 border-r-neutral-800 rounded w-60">
+                6
+              </div>
             </div>
           </div>
-          <div className="realtiv flex flex-col ml-100"> <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-            <li className="mb-2 tracking-[-.01em]">Next.js 15</li>
-            <li className="mb-2 tracking-[-.01em]">Tailwind CSS</li>
-            <li className="mb-2 tracking-[-.01em]">Dark/Light Mode</li>
-            <li className="mb-2 tracking-[-.01em]">Geist Font</li>
-            <li className="mb-2 tracking-[-.01em]">Und vieles mehr...</li>
-            <li>
-              <button className="border-2 rounded-2xl rounded-b-none border-s-cyan-200 text-2xl p-4 text-">
-                Delete
-              </button>
-            </li>
-          </ol></div>
-         
+          <div className="realtiv flex flex-col ml-100">
+            {" "}
+            <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
+              <li className="mb-2 tracking-[-.01em]">Next.js 15</li>
+              <li className="mb-2 tracking-[-.01em]">Tailwind CSS</li>
+              <li className="mb-2 tracking-[-.01em]">Dark/Light Mode</li>
+              <li className="mb-2 tracking-[-.01em]">Geist Font</li>
+              <li className="mb-2 tracking-[-.01em]">Und vieles mehr...</li>
+              <li>
+                <button className="border-2 rounded-2xl rounded-b-none border-s-cyan-200 text-2xl p-4 text-">
+                  Delete
+                </button>
+              </li>
+            </ol>
+          </div>
         </main>
       </div>
     </div>
