@@ -1,5 +1,5 @@
 import { Icon1 } from "../Icons/Icons"
-import styles from "./clients.module.css/"
+import styles from "./clients.module.css"
 
 const Clients = () => {
   return (
