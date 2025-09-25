@@ -11,10 +11,6 @@
   --card-background: #ffffff;
   --border-color: #e5e7eb;
   --header-background: #f5f7fa; /* Header Hintergrundfarbe */
-  /* added marcel */
-  --swiper-bullet-color: var(--border-color);
-  --swiper-bullet-active-color: var(--akzentcolor);
-   /* added marcel */
 }
 
 .dark {
@@ -52,13 +48,3 @@ body {
     --foreground: #ededed;
   }
 }
-/* added marcel */
-.swiper-pagination-bullet {
-  background-color: var(--swiper-bullet-color);
-  opacity: 1; /* Standardmäßig etwas transparent */
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--swiper-bullet-active-color);
-}
-/* added marcel */
