@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./components/header/Header";
 import ThemeToggleBtn from "./components/ui/button/ThemeToggleBtn";
 
