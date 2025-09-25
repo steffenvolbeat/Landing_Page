@@ -19,7 +19,7 @@ const Register: React.FC = () => {
         <p className="text-xs">
           Where to grow your business as a photographer: site or social media?
         </p>
-        <Btn handleClick={handleClick} title={"Register"} />
+        <Btn handleClick={handleClick} title={"Register"}/>
       </div>
       <div>
         <RegisterImage />

@@ -8,9 +8,10 @@ type BtnProps = {
   handleClick: () => void;
   title: string;
   isIcon?: boolean;
+  
 };
 
-export const Btn = ({ handleClick, title, isIcon }: BtnProps) => {
+export const Btn = ({ handleClick, title, isIcon, }: BtnProps) => {
   return (
     <button
       onClick={handleClick}
