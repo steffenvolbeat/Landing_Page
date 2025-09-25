@@ -13,8 +13,8 @@ export default function Header() {
   };
   return (
     <div
-      className="h-[84px] w-full flex justify-between items-center px-4 transition-colors duration-300"
-      style={{ color: "var(--link-header-color)" }}>
+      className="h-[84px] fixed  top-0  z-10 w-full  flex justify-between items-center px-4 transition-colors duration-300"
+      style={{ background:"var(--main-background)",  color: "var(--link-header-color)" }}>
       {/* Mobile Navigation */}
       <div className="md:hidden group relative">
         <Burger className="h-10 w-10  cursor-pointer" />
