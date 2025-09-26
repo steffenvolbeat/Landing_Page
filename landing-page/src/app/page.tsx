@@ -1,5 +1,6 @@
 import Clients from "./components/clients/Clients";
 import Header from "./components/header/Header";
+import HelpLocal from "./components/help-local/HelpLocal";
 import RegisterSwiper from "./components/register/RegisterSwiper";
 
 import ThemeToggleBtn from "./components/ui/button/ThemeToggleBtn";
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <RegisterSwiper />
       <Clients />
+      <HelpLocal />
       <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-5 bg-background text-text-color">
         <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start ">
           <Image
