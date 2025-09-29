@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CaringItem } from "./CaringItem";
 
 type ImageWithText = {
   id: string;
@@ -37,13 +38,7 @@ const CaringMarket = async () => {
             {marketNews.map((item) => {
               return (
                 <div key={item.id}>
-                  <Image
-                    src={item.img}
-                    alt="Design your site"
-                    width={400}
-                    height={300}
-                  />
-                  <p key={item.id}>{item.text}</p>
+                  <CaringItem img={item.img} title={item.text}/>
                 </div>
               );
             })}
