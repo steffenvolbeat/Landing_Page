@@ -26,7 +26,7 @@ const CaringMarket = async () => {
 
     return (
       <div style={{ background: "var(--card-background)" }} className="px-6">
-        <div className="max-w-7xl mx-auto flex flex-col justify-center items-center gap-5">
+        <div className="max-w-7xl mx-auto flex flex-col justify-center items-center gap-5 mb-20">
           <h2>Caring is the new marketing</h2>
           <p className="max-w-[670px] text-center">
             The Nexcent blog is the best place to read about the latest
@@ -34,7 +34,7 @@ const CaringMarket = async () => {
             community, read about how our community are increasing their
             membership income and lot's more.​
           </p>
-          <div>
+          <div className="flex justify-between flex-col items-center gap-5 md:flex-row">
             {marketNews.map((item) => {
               return (
                 <div key={item.id}>
