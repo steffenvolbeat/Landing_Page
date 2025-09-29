@@ -15,7 +15,7 @@ export default function Home() {
       <HelpLocal />
       <HowToDesign />
       <BritishAssociation />
-      <GetDemo />
+      <GetDemo /> 
     </div>
   );
 }
