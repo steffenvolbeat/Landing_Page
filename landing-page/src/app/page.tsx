@@ -6,9 +6,6 @@ import HelpLocal from "./components/help-local/HelpLocal";
 import HowToDesign from "./components/how-to-design/HowToDesign";
 import RegisterSwiper from "./components/register/RegisterSwiper";
 
-import ThemeToggleBtn from "./components/ui/button/ThemeToggleBtn";
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div>
@@ -16,9 +13,9 @@ export default function Home() {
       <RegisterSwiper />
       <Clients />
       <HelpLocal />
-      <HowToDesign/>
-      <BritishAssociation/>
-      <GetDemo/>
+      <HowToDesign />
+      <BritishAssociation />
+      <GetDemo />
     </div>
   );
 }
