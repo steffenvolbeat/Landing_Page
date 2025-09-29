@@ -1,4 +1,5 @@
 import BritishAssociation from "./components/british-association/BritishAssociation";
+import CaringMarket from "./components/caring-market/CaringMarket";
 import Clients from "./components/clients/Clients";
 import { GetDemo } from "./components/getDemo/GetDemo";
 import Header from "./components/header/Header";
@@ -19,6 +20,7 @@ export default function Home() {
       <HowToDesign/>
       <BritishAssociation/>
       <GetDemo/>
+      <CaringMarket/>
     </div>
   );
 }
