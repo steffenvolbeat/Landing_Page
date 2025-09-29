@@ -8,7 +8,7 @@ const BritishAssociation = () => {
   return (
     <div
       style={{ background: "var(--main-background)" }}
-      className="my-10 p-5 flex flex-col sm:flex-row w-full  justify-center items-center "
+      className="my-10 p-5 flex flex-col sm:flex-row w-full  justify-center  items-center sm:items-start md:items-center gap-5"
     >
       <div className="sm:w-[40%] lg:w-[35%] w-full h-auto flex justify-center">
         <Image
@@ -40,7 +40,7 @@ const BritishAssociation = () => {
         <p>British Dragon Boat Racing Association</p>
 
         <div>
-<div className="py-5 flex flex-wrap justify-between items-center w-full ">
+<div className="py-5 flex flex-wrap justify-between items-center  gap-5 w-full ">
         <Icon1 />
         <Icon2 />
         <Icon3 />
