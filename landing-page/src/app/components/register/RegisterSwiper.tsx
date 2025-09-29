@@ -4,12 +4,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
 import Register from "./Register";
+
+
+
+
 
 const RegisterSwiper: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f7fa;
+  --main-background: #f5f7fa;
   --akzentcolor: #4caf4f;
   --h-color: #4d4d4d; /*Überschriften*/
   --text-color: #302e2e; /* Normaler Text */
@@ -14,7 +14,7 @@
 }
 
 .dark {
-  --background: #1a1a1a; /*Dunkler Hintergrund*/
+  --main-background: #1a1a1a; /*Dunkler Hintergrund*/
   --akzentcolor: #4caf4f; /*Akenzentfarbe bleibt gleich*/
   --h-color: #f5f7fa; /*Überschriften*/
   --h1-color: #f5f7fa; /*Überschriften*/
@@ -22,7 +22,7 @@
   --header-text-color: #fcfbfb; /* Nexcent wird weiß (Nexcent)*/
   --link-header-color: #ececec; /* Link Farbe im Header wird weiß */
   --foreground: #ffffff;
-  --card-background: #2d2d2d;
+  --card-background: #121212;
   --border-color: #374151;
   --header-background: #444343; /* Dunkler Header  */
 }
@@ -39,6 +39,26 @@ body {
   color: var(--text-color);
   font-family: var(--font-sans), sans-serif;
   transition: background-color 0.3s, color 0.3s; /* Smoth Transition */
+}
+
+h1,
+h2,
+h3 {
+  color: var(--h-color);
+}
+h2{
+  font-size: 44px;
+  font-weight: bold;
+}
+h3{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+
+p{
+  font-size: 14;
 }
 
 /* Automatische Dark Mode Erkennung (Fallback) */
