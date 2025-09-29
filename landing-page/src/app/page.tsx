@@ -1,3 +1,4 @@
+import BritishAssociation from "./components/british-association/BritishAssociation";
 import Clients from "./components/clients/Clients";
 import Header from "./components/header/Header";
 import HelpLocal from "./components/help-local/HelpLocal";
@@ -15,7 +16,7 @@ export default function Home() {
       <Clients />
       <HelpLocal />
       <HowToDesign/>
-      
+      <BritishAssociation/>
     </div>
   );
 }
