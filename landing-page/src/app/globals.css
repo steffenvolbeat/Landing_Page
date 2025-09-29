@@ -73,3 +73,12 @@ p{
     --foreground: #ededed;
   }
 }
+
+
+.swiper-pagination-bullet {
+  background-color: var(--akzentcolor) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--akzentcolor) !important;
+}
