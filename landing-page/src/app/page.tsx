@@ -1,4 +1,5 @@
 import Clients from "./components/clients/Clients";
+import { GetDemo } from "./components/getDemo/GetDemo";
 import Header from "./components/header/Header";
 import HelpLocal from "./components/help-local/HelpLocal";
 import HowToDesign from "./components/how-to-design/HowToDesign";
@@ -15,7 +16,7 @@ export default function Home() {
       <Clients />
       <HelpLocal />
       <HowToDesign/>
-      
+      <GetDemo/>
     </div>
   );
 }
