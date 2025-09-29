@@ -10,6 +10,8 @@ const BritishAssociation = () => {
       style={{ background: "var(--main-background)" }}
       className="my-10 p-5 flex flex-col sm:flex-row w-full  justify-center  items-center sm:items-start md:items-center gap-5"
     >
+
+        
       <div className="sm:w-[40%] lg:w-[35%] w-full h-auto flex justify-center">
         <Image
           className="object-cover "
