@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./components/theme/ThemeProvider";
+import Footer from "./components/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
     "Modern Landing Page mit Next.js 13 und Tailwind CSS and Dark/Light Mode",
 };
 
+
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,7 +35,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/*ThemeProvider umschließt alle Children */}
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <div className="min-h-screen flex flex-col">
+            <main className="flex-1">
+              {children}
+            </main>
+            {/* Footer ganz unten */}
+            <Footer />
+          </div>
+        </ThemeProvider>
+          
       </body>
     </html>
   );
