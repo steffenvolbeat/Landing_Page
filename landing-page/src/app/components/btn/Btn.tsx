@@ -18,7 +18,8 @@ export const Btn = ({ handleClick, title, isIcon, }: BtnProps) => {
       className={`
         flex justify-center items-center gap-3 pt-2.5 pb-2.5 pl-5 pr-5 rounded-[6px] text-white text-lg max-w-44
         ${styles.btn_bg}
-        `}>
+        `}
+    >
       {title}
       {isIcon ? <ArrowRight /> : ""}
     </button>

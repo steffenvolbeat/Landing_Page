@@ -1,29 +1,26 @@
 import Image from "next/image";
 
-type IconProps = {
+type IconProps = React.SVGProps<SVGSVGElement> & {
   fill?: string;
 };
 
-export const ArrowRight: React.FC<React.SVGProps<SVGSVGElement>> = ({
-  fill,
-}: IconProps) => {
+export const ArrowRight: React.FC<IconProps> = ({ fill, ...props }) => {
   return (
-    <>
-      <svg
-        width="18"
-        height="12"
-        viewBox="0 0 14 8"
-        fill={fill}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M10.2503 7.00012L12.7201 4.53039C13.013 4.23749 13.013 3.7626 12.7201 3.4697L10.2503 0.999966M12.5004 4.00004L1.50012 4.00004"
-          stroke="white"
-          strokeWidth="1.1"
-          strokeLinecap="round"
-        />
-      </svg>
-    </>
+    <svg
+      {...props}
+      width={props.width ?? "40"}
+      height={props.height ?? "12"}
+      viewBox={props.viewBox ?? "0 0 14 8"}
+      fill={fill}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.2503 7.00012L12.7201 4.53039C13.013 4.23749 13.013 3.7626 12.7201 3.4697L10.2503 0.999966M12.5004 4.00004L1.50012 4.00004"
+        stroke={fill}
+        strokeWidth="1.1"
+        strokeLinecap="round"
+      />
+    </svg>
   );
 };
 
@@ -436,5 +433,3 @@ export const Organisation3: React.FC<React.SVGProps<SVGSVGElement>> = (
     </svg>
   );
 };
-
-
