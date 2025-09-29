@@ -13,8 +13,9 @@ const Clients = () => {
   };
 
   return (
-    <div
-      className={`px-5  py-10 flex flex-col justify-center items-center ${styles.container}`}>
+    <div className="flex flex-col justify-center items-center w-full">
+         <div
+      className={`py-10 flex flex-col justify-center items-center ${styles.container}`}>
       <h2>Our Clients</h2>
       <p>We have been working with some Fortune 500+ clients</p>
       <div className="py-5 flex flex-wrap justify-between items-center w-full ">
@@ -25,6 +26,8 @@ const Clients = () => {
         <Icon5 />
         <Icon6 />
       </div>
+    </div>
+ 
       <h2 className="mt-10 max-w-[680px] text-center">
         Manage your entire community in a single system{" "}
       </h2>

@@ -1,11 +1,20 @@
 import Image from "next/image";
-import { ArrowRight, Icon1, Icon2, Icon3, Icon4, Icon5, Icon6 } from "../Icons/Icons";
+import {
+  ArrowRight,
+  Icon1,
+  Icon2,
+  Icon3,
+  Icon4,
+  Icon5,
+  Icon6,
+} from "../Icons/Icons";
 
 const BritishAssociation = () => {
   const handleClick = () => {
     console.log("Button wurde geklickt!");
   };
   return (
+<<<<<<< HEAD
     <div
       style={{ background: "var(--main-background)" }}
       className="my-10 p-5 flex flex-col sm:flex-row w-full  justify-center  items-center sm:items-start md:items-center gap-5"
@@ -24,6 +33,24 @@ const BritishAssociation = () => {
       </div>
 
       <div className="sm:w-[60%]  lg:w-[65%] w-full ">
+=======
+    <div className="w-full">
+      <div
+        style={{ background: "var(--main-background)" }}
+        className="my-10 p-5 flex flex-col sm:flex-row w-full  justify-center  items-center sm:items-start md:items-center gap-5"
+      >
+        <div className="sm:w-[40%] lg:w-[35%] w-full h-auto flex justify-center">
+          <Image
+            className="object-cover "
+            src="/british.png"
+            alt="Design your site"
+            width={326}
+            height={326}
+            priority
+          />
+        </div>
+        <div className="sm:w-[60%]  lg:w-[65%] w-full ">
+>>>>>>> origin/main
         <p>
           <span className="text-[16px]">
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
@@ -38,22 +65,25 @@ const BritishAssociation = () => {
             Curabitur id nibh id sem dignissim finibus ac sit amet magna.
           </span>
         </p>
-        <h4 >Tim Smith</h4>
+        <h4>Tim Smith</h4>
         <p>British Dragon Boat Racing Association</p>
 
         <div>
-<div className="py-5 flex flex-wrap justify-between items-center  gap-5 w-full ">
-        <Icon1 />
-        <Icon2 />
-        <Icon3 />
-        <Icon4 />
-        <Icon5 />
-        <Icon6 />
-        <h4 className="flex items-center">Meet all customers <ArrowRight fill="var(--akzentcolor)"/></h4>
+          <div className="py-5 flex flex-wrap justify-between items-center  gap-5 w-full ">
+            <Icon1 />
+            <Icon2 />
+            <Icon3 />
+            <Icon4 />
+            <Icon5 />
+            <Icon6 />
+            <h4 className="flex items-center">
+              Meet all customers <ArrowRight fill="var(--akzentcolor)" />
+            </h4>
+          </div>
+        </div>
       </div>
 
-        </div>
-        
+      
       </div>
     </div>
   );

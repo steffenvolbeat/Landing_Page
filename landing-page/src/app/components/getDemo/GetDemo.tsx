@@ -9,7 +9,7 @@ export const GetDemo = () => {
   };
 
   return (
-    <section className="text-center bg-[var(--main-background)] flex flex-col justify-center items-center p-10">
+    <section className=" text-center bg-[var(--main-background)] flex flex-col justify-center items-center p-10">
       <h2>
         Pellentesque suscipit <br />
         fringilla libero eu.
