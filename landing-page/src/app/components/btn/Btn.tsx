@@ -16,7 +16,7 @@ export const Btn = ({ handleClick, title, isIcon, }: BtnProps) => {
     <button
       onClick={handleClick}
       className={`
-        flex justify-center items-center gap-3 pt-2.5 pb-2.5 pl-5 pr-5 rounded-[6px] text-white text-lg 
+        flex justify-center items-center gap-3 pt-2.5 pb-2.5 pl-5 pr-5 rounded-[6px] text-white text-lg max-w-32
         ${styles.btn_bg}
         `}>
       {title}
