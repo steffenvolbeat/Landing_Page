@@ -8,6 +8,7 @@ type HelpLocalItemProps = {
 
 const HelpLocalItem = ({ img, title, content }: HelpLocalItemProps) => {
   return (
+    
     <div className="w-[220px] flex items-center gap-5">
       <Image src={img} alt={content} width={48} height={48}/>
       <div>
