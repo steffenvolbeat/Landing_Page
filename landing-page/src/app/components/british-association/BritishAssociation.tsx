@@ -14,10 +14,10 @@ const BritishAssociation = () => {
     console.log("Button wurde geklickt!");
   };
   return (
-    <div className="w-full">
+    <div className="w-full" style={{ background: "var(--main-background)" }}>
       <div
-        style={{ background: "var(--main-background)" }}
-        className="my-10 p-5 flex flex-col sm:flex-row w-full  justify-center  items-center sm:items-start md:items-center gap-5"
+        
+        className="max-w-7xl mx-auto my-10 p-5 flex flex-col sm:flex-row w-full  justify-center  items-center sm:items-start md:items-center gap-5"
       >
         <div className="sm:w-[40%] lg:w-[35%] w-full h-auto flex justify-center">
           <Image
