@@ -13,63 +13,64 @@ const Clients = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full">
-         <div
-      className={`py-10 flex flex-col justify-center items-center ${styles.container}`}>
-      <h2>Our Clients</h2>
-      <p>We have been working with some Fortune 500+ clients</p>
-      <div className="py-5 flex flex-wrap justify-between items-center w-full ">
-        <Icon1 />
-        <Icon2 />
-        <Icon3 />
-        <Icon4 />
-        <Icon5 />
-        <Icon6 />
-      </div>
-    </div>
- 
-      <h2 className="mt-10 max-w-[680px] text-center">
-        Manage your entire community in a single system{" "}
-      </h2>
-      <p>Who is Nextcent suitable for?</p>
-      <div className=" my-10 flex justify-center gap-10 md:gap-15 lg:gap-20 xl:gap-30 flex-col sm:flex-row">
-        {organisationList.map((item, i) => {
-          const Icon = item.icon;
-          return (
-            <OrganisationItem
-              key={i}
-              icon={Icon}
-              title={item.title}
-              content={item.content}
-            />
-          );
-        })}
-      </div>
-      <div className="flex flex-col sm:flex-row w-full  justify-center items-center ">
-        <div className="sm:w-[50%] lg:w-[40%] w-full h-auto flex justify-center">
-          <Image
-            className="object-cover "
-            src="/rafiki.png"
-            alt="Nexcent logo"
-            width={441}
-            height={329}
-            priority
-          />
+    <div className={styles.container}>
+      <div className="max-w-7xl mx-auto py-10  px-6 flex flex-col justify-center items-center">
+        <div className="w-full">
+          <h2 className="text-center">Our Clients</h2>
+          <p className="text-center">We have been working with some Fortune 500+ clients</p>
+          <div className="py-5 flex flex-wrap justify-between items-center w-full ">
+            <Icon1 />
+            <Icon2 />
+            <Icon3 />
+            <Icon4 />
+            <Icon5 />
+            <Icon6 />
+          </div>
         </div>
 
-        <div className="sm:w-[50%]  lg:w-[60%] w-full ">
-          <h2 className="text-center sm:text-left pt-5">
-            The unseen of spending three years at Pixelgrade
-          </h2>
-          <p className="py-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-            amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
-            Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
-            tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
-            Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
-            elementum pulvinar odio.
-          </p>
-          <Btn handleClick={handleClick} title={"Learn More"} />
+        <h2 className="mt-10 max-w-[680px] text-center">
+          Manage your entire community in a single system{" "}
+        </h2>
+        <p>Who is Nextcent suitable for?</p>
+        <div className=" my-10 flex justify-center gap-10 md:gap-15 lg:gap-20 xl:gap-30 flex-col sm:flex-row">
+          {organisationList.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <OrganisationItem
+                key={i}
+                icon={Icon}
+                title={item.title}
+                content={item.content}
+              />
+            );
+          })}
+        </div>
+        <div className="flex flex-col sm:flex-row w-full  justify-center items-center ">
+          <div className="sm:w-[50%] lg:w-[40%] w-full h-auto flex justify-center">
+            <Image
+              className="object-cover "
+              src="/rafiki.png"
+              alt="Nexcent logo"
+              width={441}
+              height={329}
+              priority
+            />
+          </div>
+
+          <div className="sm:w-[50%]  lg:w-[60%] w-full ">
+            <h2 className="text-center sm:text-left pt-5">
+              The unseen of spending three years at Pixelgrade
+            </h2>
+            <p className="py-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
+            </p>
+            <Btn handleClick={handleClick} title={"Learn More"} />
+          </div>
         </div>
       </div>
     </div>
