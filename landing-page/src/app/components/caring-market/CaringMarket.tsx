@@ -13,37 +13,47 @@ const CaringMarket = async () => {
     });
     if (!res.ok) throw new Error("API Fehler");
 
-    const allPosts: { id: string; body: string }[] = await res.json();
-    const selectedQuotes = allPosts.slice(0, 3);
+    const allPosts: { id: string; title: string }[] = await res.json();
+    const selectedQuotes = allPosts.slice(16, 19);
     const marketNews: ImageWithText[] = selectedQuotes.map((item) => {
       return {
         id: item.id,
         img: `https://picsum.photos/400/300?random=${item.id}`,
-        text: item.body,
+        text: item.title,
       };
     });
 
     return (
-      <div>
-        <h2>hallo</h2>
-        {marketNews.map((item) => {
-          return (
-            <div key={item.id}>
-              <Image
-                src={item.img}
-                alt="Design your site"
-                width={400}
-                height={300}
-              />
-              <p key={item.id}>{item.text}</p>
-            </div>
-          );
-        })}
+      <div style={{ background: "var(--card-background)" }} className="px-6">
+        <div className="max-w-7xl mx-auto flex flex-col justify-center items-center gap-5">
+          <h2>Caring is the new marketing</h2>
+          <p className="max-w-[670px] text-center">
+            The Nexcent blog is the best place to read about the latest
+            membership insights, trends and more. See who's joining the
+            community, read about how our community are increasing their
+            membership income and lot's more.​
+          </p>
+          <div>
+            {marketNews.map((item) => {
+              return (
+                <div key={item.id}>
+                  <Image
+                    src={item.img}
+                    alt="Design your site"
+                    width={400}
+                    height={300}
+                  />
+                  <p key={item.id}>{item.text}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     );
   } catch (err) {
     console.error("Fetch Fehler:", err);
-    return <div>Fehler beim Laden der Daten</div>;
+    return <div>Error Loading...</div>;
   }
 };
 

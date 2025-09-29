@@ -16,7 +16,7 @@ export default function Home() {
       <HelpLocal />
       <HowToDesign />
       <BritishAssociation />
-     
+      <CaringMarket />
       <GetDemo />
     </div>
   );
