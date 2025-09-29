@@ -7,9 +7,10 @@ const HowToDesign = () => {
     console.log("Button wurde geklickt!");
   };
   return (
-    <div
+    <div className="w-7xl mx-auto px-5">
+      <div
       style={{ background: "var(--card-background)" }}
-      className="my-10 px-5 flex flex-col sm:flex-row w-full  justify-center items-center "
+      className="max-w-7xl my-10 px-5 flex flex-col sm:flex-row w-full  justify-center items-center "
     >
       <div className="sm:w-[50%] lg:w-[40%] w-full h-auto flex justify-center">
         <Image
@@ -39,6 +40,8 @@ const HowToDesign = () => {
         <Btn handleClick={handleClick} title={"Learn More"} />
       </div>
     </div>
+    </div>
+    
   );
 };
 

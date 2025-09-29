@@ -11,7 +11,7 @@ const Register: React.FC = () => {
 
   return (
     <section
-      className="mt-20 w-full flex  min-h-fit justify-around items-center  bg-[var(--main-background)] sm:flex-col sm:pb-10 sm:pt-10 md:flex-row md:pl-10 md:pr-10 lg:flex-row"
+      className="max-w-7xl mt-20 w-full flex  min-h-fit justify-around items-center  bg-[var(--main-background)] sm:flex-col sm:pb-10 sm:pt-10 md:flex-row md:pl-10 md:pr-10 lg:flex-row" // max-width 7xl
     >
       <div className=" flex flex-col gap-6 justify-center">
         <h1 className="text-5xl font-bold" style={{color: "var(--h-color)"}}>Lessons and insights</h1>

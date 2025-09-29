@@ -6,9 +6,10 @@ import HelpLocalItem from "./HelpLocalItem";
 
 const HelpLocal = () => {
   return (
-    <div
-      style={{ background: "var(--main-background)" }}
-      className="px-5 py-15 flex flex-col sm:flex-row w-full gap-5 justify-center items-center "
+    <div style={{ background: "var(--main-background)" }}>
+      <div
+      
+      className="max-w-7xl mx-auto px-5 py-15 flex flex-col sm:flex-row w-full gap-5 justify-center items-center "
     >
       <div className="sm:w-[60%] lg:w-[40%] w-full h-auto flex flex-col justify-center">
         <h2>Helping a local</h2> 
@@ -39,6 +40,8 @@ const HelpLocal = () => {
         />
       </div>
     </div>
+    </div>
+    
   );
 };
 
